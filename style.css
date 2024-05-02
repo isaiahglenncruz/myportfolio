@@ -5,7 +5,7 @@ body {
 .header {
     background-color: #1F2937;
     padding: 10px;
-  }
+}
   
 .navbar {
     position: relative;
@@ -90,4 +90,60 @@ body {
     padding: 10px 20px;
     margin: 5px;
     border-radius: 20px;
+}
+
+.projects {
+    background-color: #E5E7EB;
+    padding: 20px;
+    position: relative;
+    height: calc(100vh - 20px); /* Adjust the height of the projects div */
+    display: flex;
+    flex-direction: column; /* Stack the project cards vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    background-color: transparent; /* Remove background color */
+    border-radius: 10px; /* Keep rounded corners */
+    overflow: hidden; /* Ensure rounded corners overlay the image */
+    margin: 20px auto; /* Center the project cards and add margin */
+    width: 50%; /* Take up only the middle 50% of the page */
+    display: flex;
+}
+
+.project-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #B8B8B8; /* Background color for text */
+    border-radius: 10px; /* Rounded corners for text */
+}
+
+.project-text h2 {
+    margin-bottom: 10px;
+}
+
+.project-image {
+    flex: 1;
+    overflow: hidden; /* Prevent image overflow */
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Ensure z-index works */
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Apply rounded corners to image */
+    position: relative; /* Ensure z-index works */
+    z-index: 0; /* Move image behind text */
+}
+
+.project-image:hover {
+    transform: translateX(5px) translateY(5px) rotate(-5deg); /* Tilt effect on hover */
+}
+
+.project.expanded {
+    width: 55%; /* Expand the project card by 5% */
+    transition: width 0.5s; /* Smooth transition when expanding */
 }
