@@ -1,10 +1,14 @@
 body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Hide horizontal scrollbar if any */
 }
 
 .header {
     background-color: #1F2937;
     padding: 10px;
+
 }
   
 .navbar {
@@ -61,7 +65,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
@@ -84,8 +88,8 @@ body {
 }
 
 .navbar2-button {
-    background-color: #FFFFFF; /* White background */
-    color: #1F2937; /* Dark navy blue text color */
+    background-color: #FFFFFF;
+    color: #1F2937;
     text-decoration: none;
     padding: 10px 20px;
     margin: 5px;
@@ -97,25 +101,25 @@ body {
     padding: 20px;
     position: relative;
     display: flex;
-    flex-direction: column; /* Stack the project cards vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .project {
-    background-color: transparent; /* Remove background color */
-    border-radius: 10px; /* Keep rounded corners */
-    overflow: hidden; /* Ensure rounded corners overlay the image */
-    margin: 20px auto; /* Center the project cards and add margin */
-    width: 50%; /* Take up only the middle 50% of the page */
+    background-color: transparent; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin: 20px auto; 
+    width: 50%;
     display: flex;
 }
 
 .project-text {
     flex: 1;
     padding: 20px;
-    background-color: #B8B8B8; /* Background color for text */
-    border-radius: 10px; /* Rounded corners for text */
+    background-color: #B8B8B8; 
+    border-radius: 10px; 
 }
 
 .project-text h2 {
@@ -125,26 +129,26 @@ body {
 
 .project-image {
     flex: 1;
-    overflow: hidden; /* Prevent image overflow */
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    position: relative; /* Ensure z-index works */
+    position: relative; 
 }
 
 .project-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Apply rounded corners to image */
-    position: relative; /* Ensure z-index works */
-    z-index: 0; /* Move image behind text */
+    border-radius: 10px; 
+    position: relative; 
+    z-index: 0; 
 }
 
 .project-image:hover {
-    transform: translateX(5px) translateY(5px) rotate(-5deg); /* Tilt effect on hover */
+    transform: translateX(5px) translateY(5px) rotate(-5deg); 
 }
 
 .project.expanded {
-    width: 60%; /* Expand the project card by 5% */
-    transition: width 0.5s; /* Smooth transition when expanding */
+    width: 60%; 
+    transition: width 0.5s; 
 }
 
 .navbar3 {
@@ -154,10 +158,50 @@ body {
 }
 
 .navbar3-button {
-    background-color: #FFFFFF; /* White background */
-    color: #B8B8B8; /* Dark navy blue text color */
+    background-color: #FFFFFF; 
+    color: #B8B8B8; 
     text-decoration: none;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 20px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* header stays on top of other content */
+}
+
+/* WORK EXPERIENCE HERE */
+
+.work {
+    text-align: center;
+    background-color: #E5E7EB; /* Light gray color */
+    padding: 20px;
+}
+
+.work h1 {
+    margin-bottom: 20px;
+}
+
+.work-card {
+    background-color: #E5E7EB; /* Light gray color */
+    color: #000000; /* Black text color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #1F2937; /* Navy color border */
+    border-style: double;
+    border-width: 6px; /* Adjust thickness to match the desired appearance */
+}
+
+
+.work-card h3 {
+    margin-top: 0;
+}
+
+.work-card h6 {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
