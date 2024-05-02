@@ -25,3 +25,6 @@ function expandProject() {
 
 // Call expandProject function on scroll
 window.addEventListener('scroll', expandProject);
+
+// CONTACT ME FORM
+///////////////////////

@@ -96,7 +96,6 @@ body {
     background-color: #E5E7EB;
     padding: 20px;
     position: relative;
-    height: calc(100vh - 20px); /* Adjust the height of the projects div */
     display: flex;
     flex-direction: column; /* Stack the project cards vertically */
     justify-content: center;
@@ -144,6 +143,21 @@ body {
 }
 
 .project.expanded {
-    width: 55%; /* Expand the project card by 5% */
+    width: 60%; /* Expand the project card by 5% */
     transition: width 0.5s; /* Smooth transition when expanding */
+}
+
+.navbar3 {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.navbar3-button {
+    background-color: #FFFFFF; /* White background */
+    color: #B8B8B8; /* Dark navy blue text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
 }

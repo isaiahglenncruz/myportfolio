@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaiah Cruz | Computer Science, B.S.</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <script>
+        // Scroll to the top when the page is being unloaded (refreshed)
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
     <script src="./script.js" defer></script>
+
 </head>
 <body>
     <!-- HEADER -->
@@ -32,15 +40,17 @@
                 </p>
                 <p>
                     Supporting the democratization of cloud computing, machine learning, 
-                    and artificial intelligence solutions is of high significance to my 
+                    and artificial intelligence solutions is of highest significance to my 
                     career goals. I believe in the mission of raising our humanity's 
                     collective quality of life; I would like to contribute to  
                     it by driving innovation and supporting accessibility.
                 </p>
 
                 <nav class="navbar2">
-                    <a href="#" class="navbar2-button">LinkedIn</a>
-                    <a href="#" class="navbar2-button">GitHub</a>
+                    <a href="https://www.linkedin.com/in/isaiahglenncruz/" 
+                    target="_blank" rel="noopener" class="navbar2-button">LinkedIn</a>
+                    <a href="https://github.com/isaiahglenncruz" 
+                    target="_blank" rel="noopener" class="navbar2-button">GitHub</a>
                 </nav>
 
             </div>
@@ -53,12 +63,26 @@
 
     <!-- PROJECTS -->
     <div class="projects">
+
+        <h1>My Projects</h1>
         
-    
         <div class="project">
             <div class="project-text">
-                <h2>Project Title</h2>
-                <p>Description of the project goes here.</p>
+                <h2>RAG Chatbot</h2>
+                <p>Web-based chatbot application using tools provided by 
+                    Amazon Web Services (AWS). Developed a workflow using AWS 
+                    microservices to fully understand Retrieval Automated 
+                    Generation for Generative AI. Users are able to have 
+                    context-filled conversations about a topic of their 
+                    choice after utilizing AWS's data ingestion technologies. 
+                </p>
+                <p>
+                    utilized: AWS, Python
+                </p>
+                <nav class="navbar3">
+                    <a href="https://github.com/isaiahglenncruz" 
+                    target="_blank" rel="noopener" class="navbar3-button">GitHub</a>
+                </nav>
             </div>
             <div class="project-image">
                 <img src="./images/IMG_MEEE.jpg" alt="Project Image">
@@ -69,6 +93,10 @@
             <div class="project-text">
                 <h2>Project Title</h2>
                 <p>Description of the project goes here.</p>
+                <nav class="navbar3">
+                    <a href="https://github.com/isaiahglenncruz" 
+                    target="_blank" rel="noopener" class="navbar3-button">GitHub</a>
+                </nav>
             </div>
             <div class="project-image">
                 <img src="./images/IMG_MEEE.jpg" alt="Project Image">
@@ -79,15 +107,25 @@
             <div class="project-text">
                 <h2>Project Title</h2>
                 <p>Description of the project goes here.</p>
+                <nav class="navbar3">
+                    <a href="https://github.com/isaiahglenncruz" 
+                    target="_blank" rel="noopener" class="navbar3-button">GitHub</a>
+                </nav>
             </div>
             <div class="project-image">
                 <img src="./images/IMG_MEEE.jpg" alt="Project Image">
             </div>
         </div>
-    
+
+        
+
         <!-- Add more project divs for each project -->
-    
+
     </div>
+    <!-- END PROJECTS -->
+
+    <!-- CONTACT -->
+    <!-- END CONTACT -->
 
 </body>
 </html>
