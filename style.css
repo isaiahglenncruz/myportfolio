@@ -179,10 +179,14 @@ body {
     text-align: center;
     background-color: #E5E7EB; /* Light gray color */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .work h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .work-card {
@@ -194,6 +198,7 @@ body {
     border: 2px solid #1F2937; /* Navy color border */
     border-style: double;
     border-width: 6px; /* Adjust thickness to match the desired appearance */
+    width: 40%;
 }
 
 
@@ -204,4 +209,8 @@ body {
 .work-card h6 {
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.work-card p {
+    text-align: left;
 }
