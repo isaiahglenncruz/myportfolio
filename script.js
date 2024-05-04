@@ -42,7 +42,7 @@ function smoothScroll(target) {
     const targetElement = document.querySelector(target);
     const offsetTop = targetElement.offsetTop - headerHeight; // header height - target's offset
 
-    const additionalOffset = 70; // ADJUST
+    const additionalOffset = 40; // ADJUST
 
     window.scroll({
         top: offsetTop - additionalOffset, // Subtract additional offset
