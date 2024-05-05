@@ -8,7 +8,11 @@ body {
 .header {
     background-color: #1F2937;
     padding: 10px;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
   
 .navbar {
@@ -128,6 +132,7 @@ body {
 }
 
 .project-image {
+    margin-left: 30px;
     flex: 1;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -331,6 +336,7 @@ body {
     bottom: 0;
     right: 0;
     font-size: 3em; 
+    padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
